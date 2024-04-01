@@ -6,7 +6,7 @@ conda create -p ./venv python=3.8 -y
 
 
 echo [$(date)] "Activating python 3.8 virtual environment"
-source activate ./venv
+conda activate ./venv
 
 
 echo [$(date)] "Installing the requirments"
