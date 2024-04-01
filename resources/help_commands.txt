@@ -1,0 +1,76 @@
+                   
+                   ** Some Usefull commands **
+
+============================================================
+
+1. Github
+    -> create github repository 
+
+    -> "git config --global user.name "<git username>"" - only for first time
+    -> "git config --global user.email <git gmail id>"  - only for first time
+
+    -> "git init"
+    -> "git add <file name>"
+    -> "git commit -m "<commit message>""
+    -> "git push -u origin <branch>"
+
+    -> "git status"
+
+============================================================
+
+2. To create and activate virtual environment
+
+			Method - 1 (using anaconda)
+    -> "conda create -p venv python==3.11 -y" 
+    -> "conda activate venv/"
+    -> "conda deactivate" - deactivate virtual environment after using it to avoid conflict
+
+    -> "conda --version" - to check conda is installed or not
+
+			Method - 2 (using python)
+    -> "python -m venv myenv"
+    -> "myenv\Scripts\activate"
+    -> "deactivate"
+	
+			Method - 3 (using linux method)
+    -> "pip install virtualenv"
+    -> "virtualenv -p python3 virtual_env"
+    -> "virtual_env\Scripts\activate"
+    -> "deactivate"
+
+============================================================
+
+3. To install requirements
+    -> "pip install -r requirements.txt"
+
+============================================================
+
+4. To run flask application
+    -> "python application.py"
+
+============================================================
+
+5. Dockerfile template
+"
+python:3.11-alpine
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD python application.py
+"
+
+-------------------------------------------
+
+6. To create docker container
+    -> "docker build -t <image name> ."
+    -> "docker run -p 5000 5000 <image name>"
+
+    -> "docker images"
+    
+    -> "docker ps" - give the present running container information
+    -> "docker stop <container id>"
+
+    -> "docker tag <image name> <username>/<image_name>" - renaming docker image
+    -> "docker push <username>/<image_name>:<tag>"
+
+============================================================

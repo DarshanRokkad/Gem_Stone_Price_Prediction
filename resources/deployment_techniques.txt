@@ -1,0 +1,74 @@
+
+                ** Some Deployment Techniques **
+
+                        -- AWS --
+====================================================
+
+1. Using Elastic Beanstalk(EBS) and Code Pipeline.
+
+    1. Add Deploy configurations to project.
+        1. Create ".ebextensions" folder in project.
+        2. In .ebextensions folder create python.config file.
+        ```
+        option_settings:
+            "aws:elasticbeanstalk:container:python":
+                WSGIPath: application:application
+        ```
+        3. Push code to github.
+
+    2. Create IAM role(2 roles -> 1.EBS and 2.CodePipeline).
+        step 1:
+            1. Choose "trusted entity type" -> "AWS Service".
+            2. Choose "Use Case" -> "EC2"
+        step 2:
+            1. Attach the policy.
+                -> for EBS policy "AWSElasticBeanstalkWebTier".
+                -> for Code Pipeline with policy "AWSCodePipeline_FullAccess".
+        step 3:
+            1. Give the "role name".
+        finish
+    
+    3. Create Elastic Beanstalk Service.
+        Step 1:
+            1. Give Application name.
+        Step 2:
+            1. Select "Environment tier" -> "Web server environment"
+            2. Choose the platform and recommended platform version -> "python"
+        Step 3:
+            1. Choose the iam role created.
+        Step 4:
+            1. Choose the default VPC.
+            2. Choose the instance subnet.
+        Step 5:
+            1. Choose the default "Security Group".
+        Step 6: 
+            1. Choose the System - "Enchanced".
+        finish
+
+
+    4. Create Code Pipeline.
+        Step 1:
+            1. Give pipeline name.
+            2. Choose the iam role created.
+        Step 2(Choose Source):
+            1. Choose the "Source" -> github
+            2. Choose the github repository.
+            3. Choose the branch.
+            4. Choose detection options -> "Github webhooks"
+        Step 3:
+            1. Skip build options.
+        Step 4(Choose Deploy provider):
+            1. Choose Deploy provider - "AWS Elastic Beansstalk".
+            2. Choose the Region.
+            3. Choose the application name - choose the EBS application created.
+            4. Choose the Environment name - Choose the related envirnoment name.
+    finish
+
+    5. Go to Elastic Beanstalk page and we will have a website link in "Domain" section.
+
+====================================================
+
+2. Using Elastic Container registry(ECR) and Elastic Cloud Compute(EC2).
+
+
+====================================================
