@@ -1,0 +1,4 @@
+Step 1: Create virutal environment using 'init_setup.sh'
+        - cmd -> 'bash init_setup.sh'
+
+Step 2: Add 'requirements.txt'
