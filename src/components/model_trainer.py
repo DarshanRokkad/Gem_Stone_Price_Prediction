@@ -39,7 +39,7 @@ class ModelTrainer:
                 'ElasticNet Regressor' : ElasticNet()
             }
 
-            models_report, best_model, best_model_name, best_model_score = evaluate_models(x_train, x_test, y_train, y_test, models)            
+            models_report, best_model_name, best_model_score = evaluate_models(x_train, x_test, y_train, y_test, models)            
             logging.info(f'{models_report}')
             logging.info(f'Best model is {best_model_name} with r2 score {best_model_score}')
 
