@@ -26,8 +26,8 @@ Explain the problem solving approch
 
 <h3 align="center">Project UI</h3>
 
-<p align="center"><img src="images/project_ui1.png" width="700" height="400"></p>
-<p align="center"><img src="images/project_ui2.png" width="700" height="400"></p>
+<p align="center"><img src="images/project_ui1.png" width="700" height="370"></p>
+<p align="center"><img src="images/project_ui2.png" width="700" height="370"></p>
 
 ---
 
