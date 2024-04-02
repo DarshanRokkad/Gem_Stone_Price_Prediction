@@ -47,18 +47,3 @@ class DataIngestion:
         except Exception as e:
             logging('!!! Error occured in data ingestion')
             raise CustomException(e, sys)
-        
-        
-# for testing purpuse only 
-if __name__ ==  '__main__':
-    # checking data ingestion
-    data_ingestion = DataIngestion()
-    train_data_path, test_data_path = data_ingestion.initiate_data_ingestion()
-    
-    # checking data transformation
-    data_transmission = DataTransformation()
-    train_arr, test_arr = data_transmission.initiate_data_transformation(train_data_path, test_data_path)
-    
-    # checking model trainer
-    model_trainer = ModelTrainer()
-    model_trainer.initiate_model_training(train_arr, test_arr)
