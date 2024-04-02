@@ -20,7 +20,7 @@ def save_obj(file_path:str, obj) -> None:
 def load_obj(file_path:str):
     ''' loads the object from the given file path '''
     try:
-        with open(file_path, 'wb') as file:
+        with open(file_path, 'rb') as file:
             obj = dill.load(file)
         logging.info('Object loaded successfullys')
         return obj
