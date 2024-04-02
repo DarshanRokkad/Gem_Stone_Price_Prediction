@@ -9,6 +9,7 @@ mlflow
 dvc
 ipykernel
 dataclasses
+dill
 
 pytest
 tox
