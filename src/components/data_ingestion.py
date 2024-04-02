@@ -7,8 +7,6 @@ from dataclasses import dataclass
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
 
 @dataclass
 class DataIngestionConfig:
