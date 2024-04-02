@@ -12,7 +12,7 @@ Dataset Link : [Regression with a Tabular Gemstone Price Dataset](https://www.ka
 
 <h3 align="center">Solution Explaination</h3>
 
-Click the below image to see vedio solution explaination 
+Click the below image to see vedio solution explaination
 
 [![YouTube Video](images/youtube-tumbnail.png)](https://www.youtube.com/embed/______)
 
@@ -26,8 +26,8 @@ Explain the problem solving approch
 
 <h3 align="center">Project UI</h3>
 
-<p align="center"><img src="images/project_ui1.png" width="700" height="400"></p>
-<p align="center"><img src="images/project_ui2.png" width="700" height="400"></p>
+<p align="center"><img src="images/project_ui-1.png" width="700" height="400"></p>
+<p align="center"><img src="images/project_ui-2.png" width="700" height="400"></p>
 
 ---
 
@@ -40,36 +40,36 @@ Explain the problem solving approch
 <h3 align="center">Project Structure</h3>
 
 ```
-│  
+│
 ├── .github
 │   │
-│   └── workflow                          
+│   └── workflow
 │       │
 │       └── main.yml                         <-- contains yml code to create CI-CD pipeline for github actions
-│  
+│
 ├── artificats                               <-- Contains dataset(train, test and raw) and pickle files(preprocessor and model)
-│  
+│
 ├── images                                   <-- contains images used in readme file
-│  
+│
 ├── notebooks
 │   │
 │   └── experiment.ipynb                     <-- a jupyter notebook where eda and model training is performed
-│  
-├── resources                                <-- folder contains some usefull commands and steps used while build project 
-│   
+│
+├── resources                                <-- folder contains some usefull commands and steps used while build project
+│
 ├── src
 │   │
 │   ├── components
 │   │   │
 │   │   ├── data_ingestion.py             <-- module which reads data from different data source and do train test split
-│   │   │                                        then save raw data, train data and test data inside artifact folder 
+│   │   │                                        then save raw data, train data and test data inside artifact folder
 │   │   │
 │   │   ├── data_transformation.py        <-- module which takes training and test dataset and then do feature engineering
-│   │   │                                        then save preprocessor as pickle file inside artifact folder 
+│   │   │                                        then save preprocessor as pickle file inside artifact folder
 │   │   │
-│   │   ├── model_training.py             <-- module which takes preprocessed training and test data and 
-│   │   │                                        this data is used to train different models and selects best model 
-│   │   │                                        it also perform hyperparameter tuning 
+│   │   ├── model_training.py             <-- module which takes preprocessed training and test data and
+│   │   │                                        this data is used to train different models and selects best model
+│   │   │                                        it also perform hyperparameter tuning
 │   │   │
 │   │   │
 │   │   └── model_evaluation.py           <-- module which calculate the performance metrics
@@ -89,13 +89,13 @@ Explain the problem solving approch
 │   ├── logger.py                            <-- module to create log folder for each execution and log the events whenever required.
 │   │
 │   └── utils.py                             <-- module to which contians functions that are commonly used.
-│   
+│
 ├── static
 │   │
 │   └── css                                  <-- contains all css files
-│   
+│
 ├── templates                                <-- contains all html files
-│   
+│
 ├── tests
 │   │
 │   ├── integration                          <-- folder contains module used to do integration testing
@@ -108,7 +108,7 @@ Explain the problem solving approch
 │
 ├── init_setup.sh                            <-- file is likely a shell script used to initailize the setup
 │
-├── LICENSE                                  <-- copyright license for the github repository 
+├── LICENSE                                  <-- copyright license for the github repository
 │
 ├── pyproject.toml                           <-- used to specify various project metadata and configuration settings
 │
@@ -116,7 +116,7 @@ Explain the problem solving approch
 │
 ├── requirements_dev.txt                     <-- text file which contain the dependencies in development environment
 │
-├── requirements.txt                         <-- text file which contain the dependencies/packages used in project 
+├── requirements.txt                         <-- text file which contain the dependencies/packages used in project
 │
 ├── setup.cfg                                <-- configuration file used to provide various settings related to packaging and distribution
 │
