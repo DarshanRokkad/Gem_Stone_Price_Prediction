@@ -6,8 +6,6 @@ from dataclasses import dataclass
 from utils import save_obj, evaluate_models
 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import AdaBoostRegressor, GradientBoostingRegressor, RandomForestRegressor
 from sklearn.metrics import r2_score
 
 
