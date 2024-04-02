@@ -74,7 +74,7 @@ class PredictPipeline:
             logging.info(f'Predicted output is {prediction}')
             
             logging.info('Prediction pipeline completed')
-            return prediction        
+            return round(prediction, 2)        
         except Exception as e:
             logging.info('!!! Error occured in prediction pipeline')
             raise CustomException(e, sys)
