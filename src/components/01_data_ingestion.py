@@ -2,10 +2,10 @@ import os
 import sys
 from exception import CustomException
 from logger import logging
+from dataclasses import dataclass
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from dataclasses import dataclass
 
 
 @dataclass
@@ -40,6 +40,7 @@ class DataIngestion:
                 self.dataingestion_config.test_data_path
             )
         except Exception as e:
+            logging('!!! Error occured in data ingestion')
             raise CustomException(e, sys)
         
         
