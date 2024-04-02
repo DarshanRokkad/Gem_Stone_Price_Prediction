@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result">
+            <p>{{ results }}</p>
+        </div>
+    </div>
+    <script>
+        // Check if page is being loaded for the first time or being refreshed
+        if (performance.navigation.type == 1) {
+            // Redirect to home.html if page is being refreshed
+            window.location.href = "/";
+        }
+    </script>
+</body>
+</html>
