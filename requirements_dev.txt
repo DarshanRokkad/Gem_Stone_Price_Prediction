@@ -8,6 +8,7 @@ flask
 mlflow
 dvc
 ipykernel
+dataclasses
 
 pytest
 tox
