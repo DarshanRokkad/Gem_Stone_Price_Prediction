@@ -1,10 +1,12 @@
-<h1 align="center">:rocket: Generic Data Science Project Template :rocket:</h1>
+<h1 align="center">:rocket: Gem Stone Price Prediction :rocket:</h1>
 
 ---
 
 <h3 align="center">Problem Statement</h3>
 
 Explain the problem statement
+
+Dataset Link : [Regression with a Tabular Gemstone Price Dataset](https://www.kaggle.com/c/playground-series-s3e8/data)
 
 ---
 
