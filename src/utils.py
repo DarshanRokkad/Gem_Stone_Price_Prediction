@@ -34,7 +34,7 @@ def evaluate_models(x_train, x_test, y_train, y_test, models, params = None):
         logging.info('Model evaluation starts')
         
         report = {}
-        best_model_name, best_model_score = None, 0
+        best_model, best_model_name, best_model_score = None, None, 0
         for model_name in models:
             logging.info(f'Training {model_name} model started')
             regressor = models[model_name]
@@ -43,12 +43,13 @@ def evaluate_models(x_train, x_test, y_train, y_test, models, params = None):
             r2 = r2_score(y_test, y_pred)
             report[model_name] = r2
             if r2 > best_model_score:
+                best_model = regressor
                 best_model_name = model_name
                 best_model_score = r2
             logging.info(f'Training {model_name} model completed')
             
         logging.info('Model evaluation completed')        
-        return report, best_model_name, best_model_score
+        return report, best_model, best_model_name, best_model_score
     except Exception as e:
         logging.info('!!! Error occured in evaluating model')
         CustomException(e, sys)
