@@ -37,6 +37,20 @@ Explain the problem solving approch
 
 ---
 
+<h3 align="center">Deployment 1 - Using AWS Elastic Beanstalk(EBS)</h3>
+
+Step 1 : Created role for AWS EBS ('gem_stone_deploy_role') and AWS code pipeline ('gem_stone_pipeline_role').  
+Step 2 : Created AWS EBS application and launched EBS environment with certian configuration.  
+Step 3 : Created AWS Code pipeline to connect github to EBS.  
+Step 4 : Waiting for Deployment and then accessing application using domain given in AWS EBS.  
+
+<p align="center"><img src="images/deploy1.png" width="700" height="400"></p>
+<p align="center"><img src="images/deploy2.png" width="700" height="400"></p>
+<p align="center"><img src="images/deploy3.png" width="700" height="400"></p>
+<p align="center"><img src="images/deploy4.png" width="700" height="400"></p>
+
+---
+
 <h3 align="center">Project Structure</h3>
 
 ```
