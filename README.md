@@ -26,13 +26,14 @@ Explain the problem solving approch
 
 <h3 align="center">Project UI</h3>
 
-<p align="center"><img src="images/project-ui.png" width="700" height="400"></p>
+<p align="center"><img src="images/project_ui1.png" width="700" height="400"></p>
+<p align="center"><img src="images/project_ui2.png" width="700" height="400"></p>
 
 ---
 
 <h3 align="center">API Testing Results</h3>
 
-<p align="center"><img src="images/api-testing-results-screenshot.png" width="700" height="400"></p>
+<p align="center"><img src="images/api_testing_results.png" width="700" height="400"></p>
 
 ---
 
