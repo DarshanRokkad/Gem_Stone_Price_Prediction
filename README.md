@@ -60,26 +60,26 @@ Explain the problem solving approch
 │   │
 │   ├── components
 │   │   │
-│   │   ├── 01_data_ingestion.py             <-- module which reads data from different data source and do train test split
+│   │   ├── data_ingestion.py             <-- module which reads data from different data source and do train test split
 │   │   │                                        then save raw data, train data and test data inside artifact folder 
 │   │   │
-│   │   ├── 02_data_transformation.py        <-- module which takes training and test dataset and then do feature engineering
+│   │   ├── data_transformation.py        <-- module which takes training and test dataset and then do feature engineering
 │   │   │                                        then save preprocessor as pickle file inside artifact folder 
 │   │   │
-│   │   ├── 03_model_training.py             <-- module which takes preprocessed training and test data and 
+│   │   ├── model_training.py             <-- module which takes preprocessed training and test data and 
 │   │   │                                        this data is used to train different models and selects best model 
 │   │   │                                        it also perform hyperparameter tuning 
 │   │   │
 │   │   │
-│   │   └── 04_model_evaluation.py           <-- module which calculate the performance metrics
+│   │   └── model_evaluation.py           <-- module which calculate the performance metrics
 │   │
 │   ├── pipeline
 │   │   │
 │   │   ├── __init__.py
 │   │   │
-│   │   ├── 01_training_pipeline.py          <-- module used to train the model using training components
+│   │   ├── training_pipeline.py          <-- module used to train the model using training components
 │   │   │
-│   │   └── 02_prediction_pipeline.py        <-- module takes the input data given by user through flask web application and returns the prediction
+│   │   └── prediction_pipeline.py        <-- module takes the input data given by user through flask web application and returns the prediction
 │   │
 │   ├── __init__.py
 │   │
