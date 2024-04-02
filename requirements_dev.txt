@@ -1,11 +1,13 @@
 numpy
 pandas
-scikit-learn
 seaborn
 matplotlib
+scikit-learn
+xgboost
 flask
 mlflow
 dvc
+ipykernel
 
 pytest
 tox
