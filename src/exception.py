@@ -16,7 +16,7 @@ class CustomException(Exception):
     
     
 # for testing purpose
-# from logger import logging
+# from src.logger import logging
 # if __name__ == '__main__':
 #     try:
 #         a = 1/0

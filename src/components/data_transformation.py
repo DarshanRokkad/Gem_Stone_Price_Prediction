@@ -1,7 +1,7 @@
 import os
 import sys
-from exception import CustomException
-from logger import logging
+from src.exception import CustomException
+from src.logger import logging
 from dataclasses import dataclass
 
 import numpy as np
@@ -10,7 +10,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
-from utils import save_obj
+from src.utils import save_obj
 
 @dataclass
 class DataTransformationConfig:

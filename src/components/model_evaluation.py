@@ -1,7 +1,7 @@
 import os
 import sys
-from logger import logging
-from exception import CustomException
+from src.logger import logging
+from src.exception import CustomException
 
 class ModelEvaluation:
     def initiate_model_evaluation(self, train_arr, test_arr):

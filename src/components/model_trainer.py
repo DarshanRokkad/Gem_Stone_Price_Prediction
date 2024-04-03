@@ -1,9 +1,9 @@
 import os
 import sys
-from logger import logging
-from exception import CustomException
+from src.logger import logging
+from src.exception import CustomException
 from dataclasses import dataclass
-from utils import save_obj, evaluate_models
+from src.utils import save_obj, evaluate_models
 
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
 from sklearn.metrics import r2_score
