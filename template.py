@@ -12,19 +12,21 @@ list_of_files = [
         
     'src/__init__.py',                                  # main source code folder
     'src/components/__init__.py',                       # components
-    'src/components/01_data_ingestion.py',
-    'src/components/02_data_transformation.py',
-    'src/components/03_model_training.py',
-    'src/components/04_model_evaluation.py',    
+    'src/components/data_ingestion.py',
+    'src/components/data_transformation.py',
+    'src/components/model_training.py',
+    'src/components/model_evaluation.py',    
     'src/pipeline/__init__.py',                         # pipelines
-    'src/pipeline/01_training_pipeline.py',
-    'src/pipeline/02_prediction_pipeline.py',
+    'src/pipeline/training_pipeline.py',
+    'src/pipeline/prediction_pipeline.py',
     'src/exception.py',                                 # custom exception handling
     'src/logger.py',                                    # logging
     'src/utils.py',                                     # common functions
     
     'tests/unit/__init__.py',                            # folder for unit testing
+    'tests/unit/unit.py',
     'tests/integration/__init__.py',                     # folder for integration testing
+    'tests/integration/integration.py',
     
     'setup.py',                                         # for converting project into package 
     'setup.cfg',
