@@ -74,3 +74,17 @@ CMD python application.py
     -> "docker push <username>/<image_name>:<tag>"
 
 ============================================================
+
+7. Mlflow
+    -> "mlflow ui" - for monitering using ui
+
+============================================================
+
+8. DVC
+    -> "dvc init"
+    -> "dvc add <data.csv>" - to track the data
+    -> "dvc checkout" - have to do after "git checkout <commit id>"
+    -> "dvc remote add -d <remote storage name> <storage location>" - can set the remote repository location(like aws s3, azure database,..)
+    -> "dvc push" - used to push the data to the remote repository
+
+============================================================
