@@ -86,5 +86,7 @@ CMD python application.py
     -> "dvc checkout" - have to do after "git checkout <commit id>"
     -> "dvc remote add -d <remote name> <url>" - can set the remote repository location(like aws s3, azure database,..)
     -> "dvc push" - used to push the data to the remote repository
+    -> "dvc repro" - used for pipeline versioning(reproducability)
+    -> "dvc dag" - show the depends of the components
 
 ============================================================
