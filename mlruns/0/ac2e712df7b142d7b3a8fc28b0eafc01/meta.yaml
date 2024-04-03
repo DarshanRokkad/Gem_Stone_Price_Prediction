@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/PW%20Skills%20-%20Data%20Science/04_Machine_Learning/Week_ML_Projects/06_Gem_Stone_Price_Prediction/mlruns/0/ac2e712df7b142d7b3a8fc28b0eafc01/artifacts
+end_time: 1712120777546
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ac2e712df7b142d7b3a8fc28b0eafc01
+run_name: gentle-cod-64
+run_uuid: ac2e712df7b142d7b3a8fc28b0eafc01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1712120772542
+status: 3
+tags: []
+user_id: darshan

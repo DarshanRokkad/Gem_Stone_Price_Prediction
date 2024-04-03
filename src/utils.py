@@ -22,7 +22,7 @@ def load_obj(file_path:str):
     try:
         with open(file_path, 'rb') as file:
             obj = dill.load(file)
-        logging.info('Object loaded successfullys')
+        logging.info('Object loaded successfully')
         return obj
     except Exception as e:
         logging.info('!!! Error occured in loading object')

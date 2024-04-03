@@ -10,6 +10,7 @@ dvc
 ipykernel
 dataclasses
 dill
+urllib
 
 pytest
 tox
