@@ -84,7 +84,7 @@ CMD python application.py
     -> "dvc init"
     -> "dvc add <data.csv>" - to track the data
     -> "dvc checkout" - have to do after "git checkout <commit id>"
-    -> "dvc remote add -d <remote storage name> <storage location>" - can set the remote repository location(like aws s3, azure database,..)
+    -> "dvc remote add -d <remote name> <url>" - can set the remote repository location(like aws s3, azure database,..)
     -> "dvc push" - used to push the data to the remote repository
 
 ============================================================
