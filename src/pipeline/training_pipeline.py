@@ -49,8 +49,9 @@ class TrainingPipeline:
             train_arr,test_arr=self.start_data_transformation(train_data_path,test_data_path)
             logging.info('Model training initiated')            
             self.start_model_trainer(train_arr,test_arr)
-            logging.info('Model evaluation initiated')            
-            self.start_model_evaluation(train_arr,test_arr)
+            # as mlflow is used we are committing
+            # logging.info('Model evaluation initiated')            
+            # self.start_model_evaluation(train_arr,test_arr)
             
             logging.info('Training pipeline completed')
         except Exception as e:
