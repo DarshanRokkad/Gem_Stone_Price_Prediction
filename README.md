@@ -43,7 +43,7 @@ Explain the problem solving approch
 
 ---
 
-<h3 align="center">Airflow intergration</h3>
+<h3 align="center">Airflow integration</h3>
 
 <p align="center"><img src="images/airflow1.png" width="700" height="400"></p>
 <p align="center"><img src="images/airflow2.png" width="700" height="400"></p>
