@@ -23,18 +23,10 @@ list_of_files = [
     'src/logger.py',                                    # logging
     'src/utils.py',                                     # common functions
     
-    'tests/unit/__init__.py',                            # folder for unit testing
-    'tests/unit/unit.py',
-    'tests/integration/__init__.py',                     # folder for integration testing
-    'tests/integration/integration.py',
-    
     'setup.py',                                         # for converting project into package 
-    'setup.cfg',
     'init_setup.sh',
-    'pyproject.toml',
-    'tox.ini',                                          # to test the project in the local environment
     
-    'application.py',                                   # for creating the flask application 
+    'app.py',                                   # for creating the flask application 
     'templates/index.html',                             # for creating the ui for the application
     'static/css/style.css',
     
