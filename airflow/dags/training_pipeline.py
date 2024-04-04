@@ -43,7 +43,7 @@ with DAG(
         ti.xcom_push('data_transformation_artifact', {'train_arr':train_arr, 'test_arr':test_arr})
     data_transformation_task = PythonOperator(
         task_id = 'data_transformation',
-        callable = data_transformation
+        python_callable = data_transformation
     )
     data_transformation_task.doc_md = dedent(
         '''
