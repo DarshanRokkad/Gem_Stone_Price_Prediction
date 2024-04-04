@@ -22,7 +22,7 @@ with DAG(
     def data_ingestion(**kwargs):
         ti = kwargs['ti']
         train_data_path, test_data_path = training_pipeline.start_data_ingestion()
-        ti.xcom_push('data_ingestion_artifact', {'train_data_path':train_data_path, 'test_data_path':test_data_path})
+        ti.xcom_push('data_ingestion_artifact', {'train_data_path':train_data_path, 'test_data_path':test_data_path})     # xcom is cross communication
     data_ingestion_task = PythonOperator(
         task_id = 'data_ingestion',
         python_callable = data_ingestion
