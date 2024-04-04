@@ -72,17 +72,17 @@ with DAG(
     
     
     # we have to config azure blob
-    def push_data_to_azureblob(**kwargs):
+    def push_data_to_s3(**kwargs):
         import os
         bucket_name = 'repository_name'
         artifact_folder = '/app/artifacts'
-        # we can save it ti the azure blob
+        # we can save it in the azure blob
         # os.system(f"aws s3 sync {artifact_folder} s3:/{bucket_name}/artifact")
-    push_data_to_azureblob_task = PythonOperator(
+    push_data_to_s3_task = PythonOperator(
         task_id = 'push_data',
-        python_callable = push_data_to_azureblob
+        python_callable = push_data_to_s3
     )
-    push_data_to_azureblob_task.doc_md = dedent(
+    push_data_to_s3_task.doc_md = dedent(
         '''
         #### Pushing data to azure blob task
         This task push data to the azure cloud
@@ -90,4 +90,4 @@ with DAG(
     )
     
 
-data_ingestion_task >> data_transformation_task >> model_trainer_task >> push_data_to_azureblob_task
+data_ingestion_task >> data_transformation_task >> model_trainer_task >> push_data_to_s3_task
