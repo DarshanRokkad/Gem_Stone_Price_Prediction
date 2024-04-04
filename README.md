@@ -50,9 +50,11 @@ Step 4 : Waiting for Deployment and then accessing application using domain give
 <p align="center"><img src="images/deploy4.png" width="700" height="400"></p>
 
 ---
-Airflow intergration
 
-<p align="center"><img src="images/airflow.png" width="700" height="400"></p>
+<h3 align="center">Airflow intergration</h3>
+
+<p align="center"><img src="images/airflow1.png" width="700" height="400"></p>
+<p align="center"><img src="images/airflow2.png" width="700" height="400"></p>
 
 
 ---
