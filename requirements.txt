@@ -6,5 +6,5 @@ ipykernel
 Flask
 mlflow==2.2.2
 dvc
-apache-airflow
+apache-airflow==2.8.4
 -e .
