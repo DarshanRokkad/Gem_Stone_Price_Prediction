@@ -7,9 +7,8 @@ def get_requirements(file_name:str) -> List[str]:
     ''' returs the requirements project development environment '''
     with open(file_name, 'r') as file_obj:
         requirements = [requirement.replace('\n', '') for requirement in file_obj.readlines()]
-    if (HYPEN_E_DOT in requirements) or ('' in requirements):
-        requirements.remove(HYPEN_E_DOT)
-        requirements.remove('')
+        if (HYPEN_E_DOT in requirements):
+            requirements.remove(HYPEN_E_DOT)
     return requirements
 
 PACKAGE_NAME = 'darshan_gemstone_project'
@@ -23,5 +22,5 @@ setup(
     author = AUTHOR_USER_NAME, 
     author_email = AUTHOR_EMAIL,
     packages = find_packages(),    
-    install_requires = get_requirements('requirements_dev.txt')
+    install_requires = get_requirements('requirements.txt')
 )
