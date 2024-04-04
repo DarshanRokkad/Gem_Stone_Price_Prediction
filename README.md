@@ -39,7 +39,7 @@ Explain the problem solving approch
 
 <h3 align="center">Mlflow integration</h3>
 
-<p align="center"><img src="images/mlflow.png" width="700" height="400"></p>
+<p align="center"><img src="images/mlflow1.png" width="700" height="400"></p>
 
 ---
 
