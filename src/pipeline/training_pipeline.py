@@ -60,6 +60,7 @@ class TrainingPipeline:
 
 
 # for testing purpose
-# if __name__ == '__main__':
-#     training_pipeline = TrainingPipeline()
-#     training_pipeline.train_model()
+# uncomment to test training pipeline and also during reproducability "dvc repro"
+if __name__ == '__main__':
+    training_pipeline = TrainingPipeline()
+    training_pipeline.train_model()
