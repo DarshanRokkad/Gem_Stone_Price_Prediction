@@ -55,7 +55,7 @@ with DAG(
     
     def model_trainer(**kwargs):
         ti = kwargs['ti']
-        data_transformation_artifact = ti.xcom_pull(task_id = 'data_transformation', key = 'data_transformation_artifact')
+        data_transformation_artifact = ti.xcom_pull(task_ids = 'data_transformation', key = 'data_transformation_artifact')
         train_arr = np.array(data_transformation_artifact['train_arr'])
         test_arr = np.array(data_transformation_artifact['test_arr'])
         training_pipeline.start_model_trainer(train_arr, test_arr)
