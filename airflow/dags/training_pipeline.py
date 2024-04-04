@@ -38,7 +38,7 @@ with DAG(
     def data_transformation(**kwargs):
         ti = kwargs['ti']
         data_ingestion_artifact = ti.xcom_pull(task_ids = 'data_ingestion', key = 'data_ingestion_artifact')
-        train_arr, test_arr = training_pipeline.start_data_transformation(data_ingestion_artifact.train_data_path, data_ingestion_artifact.test_data_path)
+        train_arr, test_arr = training_pipeline.start_data_transformation(data_ingestion_artifact['train_data_path'], data_ingestion_artifact['test_data_path'])
         train_arr, test_arr = train_arr.tolist() , test_arr.tolist() 
         ti.xcom_push('data_transformation_artifact', {'train_arr':train_arr, 'test_arr':test_arr})
     data_transformation_task = PythonOperator(
