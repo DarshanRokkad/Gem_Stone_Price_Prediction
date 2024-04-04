@@ -1,14 +1,10 @@
-numpy
 pandas
-seaborn
-matplotlib
 scikit-learn
-xgboost
-flask
-mlflow
-dvc
+numpy
+seaborn
 ipykernel
-dataclasses
-dill
+Flask
+mlflow==2.2.2
+dvc
 apache-airflow
-pendulum
+-e .
