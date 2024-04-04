@@ -72,6 +72,7 @@ CMD python application.py
 
     -> "docker tag <image name> <username>/<image_name>" - renaming docker image
     -> "docker push <username>/<image_name>:<tag>"
+    -> "docker exec -i -t <container id> /bin/sh" - to interact with the running container environment
 
 ============================================================
 
