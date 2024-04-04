@@ -11,6 +11,7 @@ ipykernel
 dataclasses
 dill
 urllib
+apache-airflow
 
 pytest
 tox
