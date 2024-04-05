@@ -29,11 +29,7 @@ list_of_files = [
     'app.py',                                   # for creating the flask application 
     'templates/index.html',                             # for creating the ui for the application
     'static/css/style.css',
-    
-    # deployment
-    # '.ebextensions/python.config',                      # for deployment of machine learning model in aws elasitc beanstalk
-    # 'Dockerfile'                                        # for containerizing the project
-    
+        
     '.github/workflows/main.yml',                        # github actions workflow for ci-cd pipeline  
     
     'images/.gitkeep',                                  # supporting images for github readme

@@ -1,10 +1,34 @@
-<h1 align="center">:rocket: Gem Stone Price Prediction :rocket:</h1>
+<h1 align="center">:rocket: Gem Stone Price Prediction :rocket:</h1>  
 
 ---
 
 <h3 align="center">Problem Statement</h3>
 
-Explain the problem statement
+There are 10 independent variables (including id):
+
+id : unique identifier of each diamond
+
+carat : Carat (ct.) refers to the unique unit of weight measurement used exclusively to weigh gemstones and diamonds.
+
+cut : Quality of Diamond Cut
+
+color : Color of Diamond
+
+clarity : Diamond clarity is a measure of the purity and rarity of the stone, graded by the visibility of these characteristics under 10-power magnification.
+
+depth : The depth of diamond is its height (in millimeters) measured from the culet (bottom tip) to the table (flat, top surface)
+
+table : A diamond's table is the facet which can be seen when the stone is viewed face up.
+
+x : Diamond X dimension
+
+y : Diamond Y dimension
+
+x : Diamond Z dimension
+
+Target variable:
+
+price: Price of the given Diamond.
 
 Dataset Link : [Regression with a Tabular Gemstone Price Dataset](https://www.kaggle.com/c/playground-series-s3e8/data)
 
@@ -14,13 +38,13 @@ Dataset Link : [Regression with a Tabular Gemstone Price Dataset](https://www.ka
 
 Click the below image to see vedio solution explaination
 
-[![YouTube Video](images/youtube-tumbnail.png)](https://www.youtube.com/embed/______)
+[![YouTube Video](images/index.png)](https://www.linkedin.com/posts/darshan-r-m_mlops-gemstoneprediction-datascience-activity-7181954040195428353-e9Ew?utm_source=share&utm_medium=member_desktop)
 
 ---
 
 <h3 align="center">Approch for the problem</h3>
 
-Explain the problem solving approch
+The problem solving approch
 
 ---
 
@@ -50,7 +74,16 @@ Explain the problem solving approch
 
 ---
 
-<h3 align="center">Deployment 1 - Using AWS Elastic Beanstalk(EBS)</h3>
+<h3 align="center">Deployment 1 - Using Azure</h3>
+
+<p align="center"><img src="images/azure1.png" width="700" height="400"></p>  
+<p align="center"><img src="images/azure2.png" width="700" height="400"></p>  
+<p align="center"><img src="images/azure3.png" width="700" height="400"></p>  
+<p align="center"><img src="images/azure4.png" width="700" height="400"></p>  
+
+---
+
+<h3 align="center">Deployment 2 - Using AWS Elastic Beanstalk(EBS)</h3>
 
 Step 1 : Created role for AWS EBS ('gem_stone_deploy_role') and AWS code pipeline ('gem_stone_pipeline_role').  
 Step 2 : Created AWS EBS application and launched EBS environment with certian configuration.  
@@ -123,12 +156,6 @@ Step 4 : Waiting for Deployment and then accessing application using domain give
 │
 ├── templates                                <-- contains all html files
 │
-├── tests
-│   │
-│   ├── integration                          <-- folder contains module used to do integration testing
-│   │
-│   └── unit                                 <-- folder contains module used to do unit or module testing
-│
 ├── .gitignore                               <-- used to ignore the unwanted file and folders
 │
 ├── application.py                           <-- flask web application to take input from user and render output
@@ -137,21 +164,15 @@ Step 4 : Waiting for Deployment and then accessing application using domain give
 │
 ├── LICENSE                                  <-- copyright license for the github repository
 │
-├── pyproject.toml                           <-- used to specify various project metadata and configuration settings
-│
 ├── README.md                                <-- used to display the information about the project
 │
 ├── requirements_dev.txt                     <-- text file which contain the dependencies in development environment
 │
 ├── requirements.txt                         <-- text file which contain the dependencies/packages used in project
 │
-├── setup.cfg                                <-- configuration file used to provide various settings related to packaging and distribution
-│
 ├── setup.py                                 <-- python script used for building python packages of the project
 │
-├── template.py                              <-- program used to create the project structure
-│
-└── tox.ini                                  <-- used to automate and manage the testing of a project across multiple python environments
+└── template.py                              <-- program used to create the project structure
 ```
 
 ---
