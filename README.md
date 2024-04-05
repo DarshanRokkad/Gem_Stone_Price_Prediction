@@ -95,6 +95,8 @@ Step 4 : Waiting for Deployment and then accessing application using domain give
 <p align="center"><img src="images/deploy3.png" width="700" height="400"></p>  
 <p align="center"><img src="images/deploy4.png" width="700" height="400"></p>  
 
+Note : As there were so many conflicts in the branch i have deleted both the azure deployment and ebs deployment branch
+
 ---
 
 <h3 align="center">Project Structure</h3>
