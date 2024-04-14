@@ -1,4 +1,4 @@
-<h1 align="center">:rocket: Gem Stone Price Prediction :rocket:</h1>  
+<h1 align="center">:gem: Gem Stone Price :dollar: Prediction</h1>  
 
 ---
 
