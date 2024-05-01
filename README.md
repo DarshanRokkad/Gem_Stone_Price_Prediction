@@ -44,7 +44,6 @@ Click the below image to see vedio solution explaination
 
 <h3 align="center">Approch for the problem</h3>
 
-**Steps**:
 
 1. Downloading data and loading into jupyter notebook.
 2. Perfoming exploratory data analysis and feature engineering in jupyter notebook.
