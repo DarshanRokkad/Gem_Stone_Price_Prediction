@@ -44,7 +44,20 @@ Click the below image to see vedio solution explaination
 
 <h3 align="center">Approch for the problem</h3>
 
-The problem solving approch
+**Steps**:
+
+1. Downloading data and loading into jupyter notebook.
+2. Perfoming exploratory data analysis and feature engineering in jupyter notebook.
+3. Performing model building in jupyer notebook using different machine learning algorithm.
+4. Converting entire jupyter notebook experiments into modular coding with expection handling and logging.
+5. Integration of airflow for continuos model training.
+6. Ingeration of mlflow for logging performance metrics and comparsion of different models.
+7. Building of prediction pipeline and falsk api to serve model.
+8. Testing api using Postman.
+9. Building ui using HTML and CSS for flask api.
+10. Then dockering the application and testing in local environment.
+11. Deploying complete working model on Azure for practising and learning azure cloud deployment.
+12. Deploying complete working model on AWS cloud platform using CICD with github actions.
 
 ---
 
